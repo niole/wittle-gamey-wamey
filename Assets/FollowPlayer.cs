@@ -14,6 +14,5 @@ public class FollowPlayer : MonoBehaviour
         // feed player position to the camera
         // to make it follow the player, without spinning around with the player
         transform.position = player.position + offset;
-        Debug.Log(player.position);
     }
 }
