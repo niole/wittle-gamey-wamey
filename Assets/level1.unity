@@ -479,7 +479,6 @@ GameObject:
   - component: {fileID: 406804742}
   - component: {fileID: 406804741}
   - component: {fileID: 406804740}
-  - component: {fileID: 406804739}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -487,19 +486,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &406804739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 406804738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0fde3da928d1437dac10b0a07d4d918, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1265313788}
 --- !u!114 &406804740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2057,6 +2043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 1265313790}
+  scoreView: {fileID: 1381776502}
 --- !u!1001 &1297344802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2401,7 +2388,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 0
 --- !u!222 &1381776503
 CanvasRenderer:
   m_ObjectHideFlags: 0
