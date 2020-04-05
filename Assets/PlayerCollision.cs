@@ -1,9 +1,14 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCollision : MonoBehaviour
 {
 
     public PlayerMovement movement;
+
+    public Text scoreView;
+
+    private int score = 0;
 
     // is called whenever the object that this component applies to collides with something
     // as long as that object has a rigidbody and a collider
@@ -12,8 +17,10 @@ public class PlayerCollision : MonoBehaviour
 
         if (collisionDetails.collider.tag == "Obstacle")
         {
-            Debug.Log("Hit and Obstacle");
-            movement.enabled = false;
+            score += 1;
+            Debug.Log(scoreView);
+            scoreView.text = score.ToString();
+//            movement.enabled = false;
         }
     }
 }
