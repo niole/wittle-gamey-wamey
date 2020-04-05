@@ -47,20 +47,25 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isD)
         {
-            rb.AddForce(Step(), 0, 0);
+            HandleStep(Step(), 0, 0);
         }
         if (isA)
         {
-            rb.AddForce(-Step(), 0, 0);
+            HandleStep(-Step(), 0, 0);
         }
         if (isW)
         {
-            rb.AddForce(0, 0, Step());
+            HandleStep(0, 0, Step());
         }
         if (isS)
         {
-            rb.AddForce(0, 0, -Step());
+            HandleStep(0, 0, -Step());
         }
+    }
+
+    void HandleStep(float x, float y, float z)
+    {
+        rb.AddForce(x, y, z, ForceMode.VelocityChange);
     }
 
 
